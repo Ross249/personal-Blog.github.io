@@ -1,0 +1,291 @@
+/*em：相对单位长度单位 rem：集相对大小和绝对大小与一身*/
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /*抗锯齿*/
+    -webkit-font-smoothing:antialiased;
+    font-size: 16px;
+    color: #2c3e50;
+}
+a.he-an{
+    font-size: .85em;
+    float: left;
+    margin-left: -.87em;
+    padding-right: .23em;
+    margin-top: .125em;
+    /*不透明级别*/
+    opacity: 0;
+}
+h3{
+    font-weight: 600;
+    line-height: 1.25;
+}
+h3{
+    font-size: 1.35rem;
+}
+.content:not(.custom)>h3{
+    margin-top: -3.1rem;
+    padding-top: 4.6rem;
+    margin-bottom: 0;
+}
+.content:not(.custom)>:first-child {
+    margin-top: 3.6rem;
+}
+.content:not(.custom)>h3:first-child{
+    margin-top: -1.5rem;
+    margin-bottom: 1rem;
+} 
+.content:not(.custom){
+    max-width: 740px;/*最大宽度*/
+    margin: 0 auto;
+    padding: 2rem 2.5rem;
+}
+.content:not(.custom){
+    padding: 2rem;
+}
+
+.page{
+    padding-bottom: 2rem;
+}
+.page{
+    padding-left: 20rem;
+}
+.page{
+    padding-left: 16.4rem;
+}
+.space-top{
+    margin-top: 1em;
+}
+.left{
+    font-size: 15px;
+    width: 20rem;
+    position: fixed;/*固定*/
+    z-index: 10;
+    margin: 0;
+    top: 3.6rem;
+    left: 0;
+    bottom: 0;
+    /*为元素制定的任何内边框和边框都将在已设定的宽度和高度内进行绘制*/
+    box-sizing: border-box;
+    border-right: 1px solid #eaecef;
+    /*对于溢出元素自动增加滚动条进行修改*/
+    overflow: auto;
+}
+.left{
+    font-size: 15px;
+    width: 16.4rem;
+}
+.left .left-ls{
+    padding: 1.5rem 0;
+}
+.left ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.list-content{
+    color: #999;
+    /*指针悬停过度变化*/
+    transition: color .15s ease;
+    /*悬浮光标*/
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 700;
+    padding: 0 3rem;
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+p{
+    line-height: 1.7;/*行高*/
+}
+.navbar .nav-right .sbox{
+    /*设置弹性盒模型*/
+    flex: 0 0 auto;
+    /*顶端对齐*/
+    vertical-align: top;
+}
+.sbox{
+    display: inline-block;
+    position: relative;
+    margin-left: 1rem;
+}
+.sbox input{
+    cursor: text;
+    width: 10rem;
+    color: #4e6e8e;
+    display: inline-block;
+    border: 1px solid #cfd4db;
+    border-radius: 2rem;
+    font-size: .9rem;
+    line-height: 2rem;
+    padding: 0 .5em 0 2rem;
+    /*轮廓*/
+    outline: none;
+    transition: all .2s ease;
+    background: #fff url(http://www.zhenyong.xyz/assets/img/search.83621669.svg) .6rem .5rem no-repeat;
+    background-size: 1rem;
+}
+.navbar{
+    padding: .7rem 1.5rem;
+    line-height: 2.2rem;
+    position: relative;
+}
+.navbar{
+    z-index: 30;
+    right: 0;
+    height: 3.6rem;
+    background-color: #fff;
+    /*令浏览器呈现出带有指定宽度和高度的框，并把边框和内边距放入框中*/
+    box-sizing: border-box;
+    border-bottom: 1px solid #eaecef;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.navbar .title-logo{
+    font-family: "Arial";
+    font-style: italic;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2c3e50;
+    position: relative;
+}
+.navbar span{
+    display: inline-block;
+}
+.navbar .nav-right{
+    padding-left: 1.5rem;
+    box-sizing: border-box;
+    background-color: #fff;
+    /*处理元素内的空白/不换行直到遇到br*/
+    white-space: nowrap;
+    font-size: .9rem;
+    position: absolute;
+    right: 1.5rem;
+    top: .7rem;
+    display: flex;
+}
+.nav-link{
+    display: inline-block;
+}
+.navbar .nav-right .nav-link{
+    flex: 1;
+}
+.nav-link .item{
+    position: relative;
+    display: inline-block;
+    margin-left: 1.5rem;
+    line-height: 2rem;
+}
+.nav-link .item:first-child{
+    margin: 0;
+}
+
+.item>a:not(.external).router-link-active{
+    margin-bottom: -2px;
+    border-bottom: 2px solid #424242;
+}
+.dropdown{
+    cursor: pointer;
+}
+.dropdown{
+    height: 1.8rem;
+}
+.nav-link a{
+    line-height: 1.4rem;
+    color: inherit;/*继承*/
+}
+.dropdown .dropdown-title{
+    display: block;
+}
+.drop{
+    display: inline-block;
+    width: 0;
+    height: 0;
+}
+.list-content .drop{
+    position: relative;
+    top: -.12em;
+    left: 1em;
+}
+.drop.down{
+    border-left:6px solid #ccc;
+}
+.drop.down{
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+}
+
+.dropdown .dropdown-title .drop{
+    vertical-align: middle;
+    margin-top: -1px;
+    margin-left: 0;
+}
+.dropdown .dropdown-title .drop{
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 6px solid #ccc;
+    border-bottom: 0;
+}
+.dropdown .nav-dropdown{
+    display: none;
+    height: auto!important;
+    box-sizing: border-box;
+    max-height: calc(100vh - 2.7rem);
+    overflow-y: auto;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    padding: .6rem 0;
+    border: 1px solid #ddd;
+    border-bottom-color: #ccc;
+    text-align: left;
+    border-radius: .25rem;
+    white-space: nowrap;
+    margin: 0;
+}
+ul{
+    line-height: 1.7;
+}
+ul{
+    padding-left: 1.2em;
+}
+.dropdown .nav-dropdown .ditem{
+    color: inherit;
+    line-height: 1.7rem;
+}
+.dropdown .nav-dropdown .ditem a{
+    display: block;
+    line-height: 1.7rem;
+    position: relative;
+    border-bottom: none;
+    font-weight: 400;
+    margin-bottom: 0;
+    padding: 0 1.5rem 0 1.25rem;
+}
+.nav-link a{
+    display: inline-block;
+}
+.nav-link a.router-link-active{
+    color: #323232;
+}
+.nav-link a.router-link-active{
+    color: #2c3e50;
+}
+.navbar a{
+    display:inline-block;
+}
+a{
+    font-weight: 500;
+    /*文本修饰*/
+    text-decoration: none;
+}
+a{
+    color: #323232;
+}
+div{
+    display: block;
+}
