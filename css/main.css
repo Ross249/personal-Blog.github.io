@@ -1,0 +1,259 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /*抗锯齿*/
+    -webkit-font-smoothing:antialiased;
+    font-size: 16px;
+    color: #2c3e50;
+}
+.home{
+    padding: 3.6rem 2rem 0;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.home .center{
+    text-align: center;
+}
+.home .center .introduce{
+    max-width: 35rem;
+    font-size: 1.6rem;
+    line-height: 1.3;
+    color: #6a8bad;
+}
+.home .center .introduce{
+    margin: 1.8rem auto;
+}
+.home .center .click{
+    margin: 1.8rem auto;
+}
+.home .center .abutton{
+    display: inline-block;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #323232;
+    padding: .8rem 1.2rem;
+    border-radius: 4px;
+    transition: background-color .1s ease;
+    box-sizing: border-box;
+    border-bottom: 1px solid #2d2d2d;
+}
+.home .feet{
+    border-top: 1px solid #eaecef;
+    padding: 1.2rem 0;
+    margin-top: 2.5rem;
+    display: flex;
+    /*必要的时候拆行或拆列*/
+    flex-wrap: wrap;
+    /*元素位于容器的开头。弹性盒子元素的侧轴（纵轴）起始位置的边界紧靠住该行的侧轴起始边界。*/
+    align-items: flex-start;
+    /*默认值。元素被拉伸以适应容器。各行将会伸展以占用剩余的空间。如果剩余的空间是负数，该值等效于'flex-start'。在其它情况下，剩余空间被所有行平分，以扩大它们的侧轴尺寸。*/
+    align-content: stretch;
+    /*	项目位于各行之间留有空白的容器内。*/
+    justify-content: space-between;
+}
+.home .foot{
+    flex-grow: 1;
+    /*弹性盒子伸缩基础知识*/
+    flex-basis: 30%;
+    max-width: 30%;
+}
+.home .foot h2{
+    font-size: 1.4rem;
+    font-weight: 900;
+    border-bottom: none;
+    padding-bottom: 0;
+    color:#3a5169;
+}
+h2{
+    font-family: "宋体";
+    font-size: 1.65rem;
+    padding-bottom: .3rem;
+    border-bottom: 1px solid #eaecef;
+}
+h2{
+    font-weight: 600;
+    line-height: 1.25;
+}
+.home .foot p{
+    color: #4e6e8e;
+}
+p{
+    line-height: 1.7;
+}
+.navbar .nav-right .sbox{
+    flex: 0 0 auto;
+    vertical-align: top;
+}
+.sbox{
+    display: inline-block;
+    position: relative;
+    margin-left: 1rem;
+}
+.sbox input{
+    cursor: text;
+    width: 10rem;
+    color: #4e6e8e;
+    display: inline-block;
+    border: 1px solid #cfd4db;
+    border-radius: 2rem;
+    font-size: .9rem;
+    line-height: 2rem;
+    padding: 0 .5em 0 2rem;
+    outline: none;
+    transition: all .2s ease;
+    background: #fff url(http://www.zhenyong.xyz/assets/img/search.83621669.svg) .6rem .5rem no-repeat;
+    background-size: 1rem;
+}
+.navbar{
+    padding: .7rem 1.5rem;
+    line-height: 2.2rem;
+    position: relative;
+}
+.navbar{
+    z-index: 30;
+    right: 0;
+    height: 3.6rem;
+    background-color: #fff;
+    /*令浏览器呈现出带有指定宽度和高度的框，并把边框和内边距放入框中*/
+    box-sizing: border-box;
+    border-bottom: 1px solid #eaecef;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.navbar .title-logo{
+    font-family: "Arial";
+    font-style: italic;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #2c3e50;
+    position: relative;
+}
+.navbar span{
+    display: inline-block;
+}
+.navbar .nav-right{
+    padding-left: 1.5rem;
+    box-sizing: border-box;
+    background-color: #fff;
+    white-space: nowrap;
+    font-size: .9rem;
+    position: absolute;
+    right: 1.5rem;
+    top: .7rem;
+    display: flex;
+}
+.nav-link{
+    display: inline-block;
+}
+.navbar .nav-right .nav-link{
+    flex: 1;
+}
+.nav-link .item{
+    position: relative;
+    display: inline-block;
+    margin-left: 1.5rem;
+    line-height: 2rem;
+}
+.nav-link .item:first-child{
+    margin: 0;
+}
+
+.item>a:not(.external).router-link-active{
+    margin-bottom: -2px;
+    border-bottom: 2px solid #424242;
+}
+.dropdown{
+    cursor: pointer;
+}
+.dropdown{
+    height: 1.8rem;
+}
+.nav-link a{
+    line-height: 1.4rem;
+    color: inherit;
+}
+.dropdown .dropdown-title{
+    display: block;
+}
+.drop{
+    display: inline-block;
+    width: 0;
+    height: 0;
+}
+.drop.down{
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+}
+.dropdown .dropdown-title .drop{
+    vertical-align: middle;
+    margin-top: -1px;
+    margin-left: 0;
+}
+.dropdown .dropdown-title .drop{
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 6px solid #ccc;
+    border-bottom: 0;
+}
+.dropdown .nav-dropdown{
+    display: none;
+    height: auto!important;
+    box-sizing: border-box;
+    max-height: calc(100vh - 2.7rem);
+    overflow-y: auto;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    padding: .6rem 0;
+    border: 1px solid #ddd;
+    border-bottom-color: #ccc;
+    text-align: left;
+    border-radius: .25rem;
+    white-space: nowrap;
+    margin: 0;
+}
+ul{
+    line-height: 1.7;
+}
+ul{
+    padding-left: 1.2em;
+}
+.dropdown .nav-dropdown .ditem{
+    color: inherit;
+    line-height: 1.7rem;
+}
+.dropdown .nav-dropdown .ditem a{
+    display: block;
+    line-height: 1.7rem;
+    position: relative;
+    border-bottom: none;
+    font-weight: 400;
+    margin-bottom: 0;
+    padding: 0 1.5rem 0 1.25rem;
+}
+.nav-link a{
+    display: inline-block;
+}
+.nav-link a.router-link-active{
+    color: #323232;
+}
+.nav-link a.router-link-active{
+    color: #2c3e50;
+}
+.navbar a{
+    display:inline-block;
+}
+a{
+    font-weight: 500;
+    text-decoration: none;
+}
+a{
+    color: #323232;
+}
+div{
+    display: block;
+}
